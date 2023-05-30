@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloController {
 @RequestMapping("/helloboot")
 public ModelAndView helloboot() {
+	System.out.println("test1 브랜치에 수정ㄴ");
 	ModelAndView mv = new ModelAndView();
 	mv.addObject("model", "스프링부트를 시작합니다");
 	mv.setViewName("hello");
